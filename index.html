@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="moduleTest">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="app/lib/angular.min.js"></script>
+    <script src="app/lib/angular-route.min.js"></script>
+    <script src="/app/app.js"></script>
+    <title>Document</title>
+</head>
+
+<!-- ng-init - initialize variables inside the scope (can turn into a function for readability) -->
+
+<!-- <body ng-init="numbers=[1,2,3,4]; color='red'; cars=['toyota', 'honda', 'bmw', 'mercedes'];">
+    <p>Hello</p>
+
+    TWO WAY BINDING
+    -- input syncs with the output 
+    <input type="text" name="" id="" ng-model="name" placeholder="Enter your Name" />
+    <p>Your name is: {{name}}</p>
+
+    EXPRESSIONS 
+    <p>{{5 * 5}}</p>
+    <p>{{numbers[0] + numbers[3]}}</p>
+    <p>{{numbers[2]}}</p>
+    <p class="{{color}}">Hello</p>
+
+    ng-repeat 
+    <ul>
+        loop 
+        <li ng-repeat="car in cars">{{car}}</li>
+    </ul>
+
+    
+</body>
+-->
+
+<body>
+
+    <!-- IMPORT FROM ANOTHER FILE -->
+    <header ng-include="'/header.html'"></header>
+
+    <!-- different views -->
+    <main ng-view>
+
+    </main>
+
+</body>
+
+</html>

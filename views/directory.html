@@ -1,0 +1,39 @@
+<div class="content">
+    <!-- ng-click (variable) = object selection -->
+    <button ng-click="order = 'brand'">Order By Name</button>
+    <button ng-click="order = 'color'">Order By Color</button>
+
+    <p>{{message}}</p>
+
+    <ul>
+        <li ng-repeat="car in cars">{{car}}</li>
+    </ul>
+
+    <input type="text" name="" id="" ng-model="search" placeholder="Search Brand" />
+    <ul>
+        <!-- variable has been used to orderBy -->
+        <li ng-repeat="clothe in clothes | orderBy: order | filter: search">
+            <img ng-src="{{clothe.thumb}}" alt="" ng-show="clothe.thumb">
+            <h3 style="color: {{clothe.color}}">{{clothe.brand}} - {{clothe.rate |
+                currency: 'Php: '}}</h3>
+            <span>{{clothe.rate}}</span>
+            <span>{{clothe.color}}</span>
+            <!-- function call to remove item -->
+            <button ng-click="removeClothing(clothe)">remove</button>
+        </li>
+
+        <!-- <li ng-repeat="clothe in clothes | orderBy:'brand' | filter: search" ng-show="clothe.rate < 4">
+                        {{clothe.brand}} - {{clothe.rate |
+                        currency: 'Php: '}}</li> -->
+        <!-- <li ng-repeat="clothe in clothes | orderBy:'brand' | filter: search" ng-show="clothe.available">
+                        {{clothe.brand}} - {{clothe.rate |
+                        currency: 'Php: '}}</li> -->
+    </ul>
+
+    <form ng-submit="addClothing()">
+        <input type="text" name="" id="" placeholder="brand" ng-model="newClothing.brand" />
+        <input type="text" name="" id="" placeholder="color" ng-model="newClothing.color" />
+        <input type="text" name="" id="" placeholder="rate" ng-model="newClothing.rate" />
+        <input type="submit" value="Add Clothing">
+    </form>
+</div>
