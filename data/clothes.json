@@ -1,0 +1,30 @@
+[
+  {
+    "brand": "calvin klein",
+    "color": "green",
+    "rate": 2,
+    "available": true,
+    "thumb": "/app/src/Calvin.png"
+  },
+  {
+    "brand": "penshoppe",
+    "color": "black",
+    "rate": 3.2,
+    "available": true,
+    "thumb": "/app/src/41b2eed3b3d5984fca84fed35f052740.jpg"
+  },
+  {
+    "brand": "bench",
+    "color": "gray",
+    "rate": 4.1,
+    "available": false,
+    "thumb": "/app/src/BENCH-logo.jpg"
+  },
+  {
+    "brand": "adidas",
+    "color": "red",
+    "rate": 4.6,
+    "available": true,
+    "thumb": "/app/src/Original_Adidas_logo.svg.png"
+  }
+]

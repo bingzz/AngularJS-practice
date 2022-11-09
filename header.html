@@ -1,8 +1,13 @@
 <div id="menu-bar">
     <h1>Home Directory</h1>
     <ul>
-        <li><a href="#!/Home">Home</a></li>
-        <li><a href="#!/directory">Directory</a></li>
+        <li><a href="/Home">Home</a></li>
+        <li><a href="/directory">Directory</a></li>
+        <li><a href="/contact">Contact</a></li>
         <li><a href="#">About</a></li>
     </ul>
+
+    <!-- ng model for a variable holder, bind for the name of the ng-models -->
+    <input type="text" ng-model="name" placeholder="Name"/>
+    <p ng-bind="name"></p>
 </div>
